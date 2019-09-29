@@ -1,0 +1,15 @@
+
+h3 {
+    font-family: 'Mansalva', cursive;
+}
+
+.contentsDiv {
+    display: grid;
+    width: 500px;
+}
+
+.contentsCard {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

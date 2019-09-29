@@ -1,5 +1,5 @@
 a {
-  color: #731963;
+  color: #2f5d50;
   text-decoration: none;
 }
 
@@ -7,6 +7,7 @@ h1 {
   font-size: 3rem;
   font-weight: 600;
   color: rgba(0, 0, 0, .74);
+  font-family: 'Mansalva', cursive;
 }
 
 h3 {
@@ -32,4 +33,8 @@ h3 {
 
 img {
   max-width:100%;
+}
+
+body {
+  font-family: 'Mansalva', cursive;
 }
