@@ -17,17 +17,16 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/makoto-website",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "aot": true,
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "node_modules/devextreme/dist/css/dx.light.css",
               "src/styles.scss"
             ],
             "scripts": ["./node_modules/hammerjs/hammer.min.js"],
@@ -35,7 +34,7 @@
           },
           "configurations": {
             "es5": {
-                "tsConfig": "tsconfig-es5.app.json"
+              "tsConfig": "tsconfig-es5.app.json"
             },
             "production": {
               "fileReplacements": [
@@ -56,8 +55,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -78,7 +77,7 @@
               "browserTarget": "makoto-website:build:production"
             },
             "es5": {
-                "browserTarget": "makoto-website:build:es5"
+              "browserTarget": "makoto-website:build:es5"
             }
           }
         },
@@ -96,13 +95,12 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "styles": [
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "node_modules/devextreme/dist/css/dx.light.css",
               "src/styles.scss"
             ],
             "scripts": ["./node_modules/hammerjs/hammer.min.js"],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
+            "assets": ["src/favicon.ico", "src/assets"]
           }
         },
         "lint": {
@@ -113,9 +111,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {

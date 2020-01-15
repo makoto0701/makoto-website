@@ -10,6 +10,9 @@ import {
   IgxRippleModule,
   IgxCardModule
 } from "igniteui-angular";
+// import { DevExtremeModule } from "devextreme-angular";
+// import { DxPolarChartModule } from "devextreme-angular/ui/polar-chart";
+import { DxTextBoxModule } from "devextreme-angular/ui/text-box";
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
@@ -28,7 +31,10 @@ import { ChartsModule } from "ng2-charts";
     IgxLayoutModule,
     IgxRippleModule,
     IgxCardModule,
-    ChartsModule
+    ChartsModule,
+    // DxPolarChartModule,
+    DxTextBoxModule
+    // DevExtremeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
