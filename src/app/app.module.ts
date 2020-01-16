@@ -8,7 +8,9 @@ import {
   IgxNavbarModule,
   IgxLayoutModule,
   IgxRippleModule,
-  IgxCardModule
+  IgxCardModule,
+  IgxIconModule,
+  IgxButtonModule
 } from "igniteui-angular";
 // import { DevExtremeModule } from "devextreme-angular";
 // import { DxPolarChartModule } from "devextreme-angular/ui/polar-chart";
@@ -23,7 +25,7 @@ import { ChartsModule } from "ng2-charts";
   declarations: [AppComponent, HomeComponent, TestpageComponent],
   imports: [
     FormsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     IgxNavigationDrawerModule,
@@ -31,6 +33,8 @@ import { ChartsModule } from "ng2-charts";
     IgxLayoutModule,
     IgxRippleModule,
     IgxCardModule,
+    IgxIconModule,
+    IgxButtonModule,
     ChartsModule,
     // DxPolarChartModule,
     DxTextBoxModule

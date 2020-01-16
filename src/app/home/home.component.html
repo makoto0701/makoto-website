@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>{{title}}</h1>
+<h1>{{ title }}</h1>
 <!-- <img src="assets/responsive.gif" alt="Ignite UI CLI"> -->
 
 <!-- <div id="linksContainer">
@@ -7,5 +7,29 @@
     <h3 class="links"><a target="_blank" rel="noopener" href="https://www.infragistics.com/products/ignite-ui-angular">Component Demos</a></h3>
     <h3 class="links"><a target="_blank" rel="noopener" href="https://github.com/IgniteUI/igniteui-angular-ui-kits">Sketch UI Kit</a></h3>
 </div> -->
-<br>
-<a href="https://twitter.com/brain_powered_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @brain_powered_</a>
+<div id="container">
+  <igx-card id="businessCard">
+    <igx-card-header>
+      <h3 igxCardHeaderTitle>Software Developer</h3>
+      <h5 igxCardHeaderSubtitle>Coder/Architect</h5>
+    </igx-card-header>
+
+    <igx-card-content>
+      <h6>Skill set</h6>
+      <p>Angular, Typescript, Javascript, Bootstrap, jQuery, Scrum master,</p>
+    </igx-card-content>
+
+    <igx-card-actions>
+      <button igxButton igxRipple (click)="goToFacebook()">Facebook</button>
+    </igx-card-actions>
+  </igx-card>
+  <igx-card id="PortFolio">
+    <igx-card-header>
+      <h3 igxCardHeaderTitle>React test App</h3>
+      <h5 igxCardHeaderSubtitle>EC site demo</h5>
+    </igx-card-header>
+    <igx-card-media>
+      <iframe src="https://makoto0701.github.io/react-counter-app/"></iframe
+    ></igx-card-media>
+  </igx-card>
+</div>

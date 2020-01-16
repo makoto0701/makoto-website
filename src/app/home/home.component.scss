@@ -3,11 +3,20 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f4e6;
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, .74);
-  font-family: 'Mansalva', cursive;
+  color: rgba(0, 0, 0, 0.74);
+  font-family: "Poppins", sans-serif;
 }
 
 h3 {
@@ -15,7 +24,7 @@ h3 {
   font-weight: 600;
 }
 
-.links{
+.links {
   text-align: center;
   padding: 0 35px;
 }
@@ -26,15 +35,57 @@ h3 {
   justify-content: center;
 }
 
-:host{
+:host {
   width: 100%;
-  text-align:center;
+  text-align: center;
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
+}
+$_light-button: (
+  flat-border-radius: 0.2,
+  raised-border-radius: 0.2,
+  fab-border-radius: 1,
+  icon-border-radius: 1
+);
+
+// $myButtons-theme: (
+//   $flat-border-radius: 0.5,
+//   // will resolve to 10px
+//     $raised-border-radius: 30px,
+//   // Will resolve to 30px
+//     $fab-border-radius: 10%,
+//   // Will resolve to 10%
+//     $icon-border-radius: 0.5 0.2 0.5 0.2,
+//   // Will resolve to 10px 4px 10px 4px
+// );
+
+// @include igx-button($myButtons-theme);
+
+// $_myCard: (
+//   flat-border-radius: 0.2,
+//   raised-border-radius: 0.2,
+//   fab-border-radius: 1,
+//   icon-border-radius: 1
+// );
+
+// @include igx-card($_myCard);
+#container {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 150px 1fr;
+  margin: 10px;
 }
 
-body {
-  font-family: 'Mansalva', cursive;
+#businessCard {
+  grid-row: 1 / 4;
+  grid-column: 1 / 3;
+  border-radius: 0.2;
+  margin-right: 10px;
+}
+
+#PortFolio {
+  grid-row: 1 / 4;
+  grid-column: 3 / 5;
 }
